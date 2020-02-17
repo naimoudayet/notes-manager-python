@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% include 'includes/_header.html' %}
+</head>
+
+<body>
+
+    <div class="container">
+        {% include 'includes/_navbar.html' %}
+
+        <div class="container">
+            {% block body %}{% endblock %}
+        </div>
+    </div>
+
+    {% include 'includes/_jslibs.html' %}
+</body>
+
+</html>
